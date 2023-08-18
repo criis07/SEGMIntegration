@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "name": "commit-message-linter",
+      "command": "cz",
+      "args": [
+        "check",
+        "--commit-msg-file",
+        "${args}"
+      ]
+    },
+    {
+      "name": "dotnet-format",
+      "group": "pre-commit",
+      "command": "dotnet",
+      "args": ["format", "--include", "${staged}"],
+      "include": ["**/*.cs"]
+    }
+  ]
+}

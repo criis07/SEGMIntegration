@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "EditorConfig.EditorConfig",
+        "ukoloff.win-ca",
+        "Gruntfuggly.todo-tree",
+        "ms-dotnettools.csharp",
+        "ms-azuretools.vscode-docker",
+        "DotJoshJohnson.xml",
+        "amazonwebservices.aws-toolkit-vscode",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscodeintellicode-csharp",
+        "VisualStudioExptTeam.vscodeintellicode",
+    ]
+  }
