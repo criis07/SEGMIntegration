@@ -1,8 +1,11 @@
-﻿using lafise.test.Api.Filters;
+﻿using System.Reflection;
+using lafise.test.Api.Filters;
 using lafise.test.Api.Versioning;
+using lafise.test.Application.Common.Interfaces;
+using lafise.test.Infrastructure.Services.SEGMService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
-using System.Reflection;
+using Microsoft.OpenApi.Models;
 
 namespace lafise.test.Api
 {
@@ -48,6 +51,12 @@ namespace lafise.test.Api
 
             services.AddSwaggerGen(options =>
             {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "LAFISE.SEGM API",
+                    Description = "API set for SEGM integration."
+                });
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var XmlCommentsFilePath = Path.Combine(AppContext.BaseDirectory, xmlFile);
@@ -56,7 +65,7 @@ namespace lafise.test.Api
             });
 
             services.ConfigureOptions<ConfigureSwaggerOptions>();
-
+            services.AddHttpClient<ISEGMService, SEGMService>();
             return services;
         }
     }

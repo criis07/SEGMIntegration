@@ -40,13 +40,7 @@ namespace lafise.test.Api.Versioning
         /// <param name="options"></param>
         public void Configure(string? name, SwaggerGenOptions options)
         {
-            // add swagger document for every API version discovered
-            foreach (var description in _provider.ApiVersionDescriptions)
-            {
-                options.SwaggerDoc(
-                    description.GroupName,
-                    CreateVersionInfo(description));
-            }
+
         }
 
         private static OpenApiInfo CreateVersionInfo(ApiVersionDescription description)
