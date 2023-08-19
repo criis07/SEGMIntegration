@@ -12,9 +12,8 @@
     <PublishReadyToRun>true</PublishReadyToRun>
   </PropertyGroup>
   <Target Name="husky" BeforeTargets="Restore;CollectPackageReferences" Condition="'$(HUSKY)' != 0">
-    <Exec Command="dotnet tool restore"  StandardOutputImportance="Low" StandardErrorImportance="High"/>
-    <Exec Command="dotnet husky install" StandardOutputImportance="Low" StandardErrorImportance="High"
-          WorkingDirectory="..\..\" />
+    <Exec Command="dotnet tool restore" StandardOutputImportance="Low" StandardErrorImportance="High" />
+    <Exec Command="dotnet husky install" StandardOutputImportance="Low" StandardErrorImportance="High" WorkingDirectory="..\..\" />
   </Target>
   <ItemGroup>
     <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="7.2.0" />
@@ -28,6 +27,7 @@
   <ItemGroup>
     <Folder Include="Middleware\" />
     <Folder Include="Policies\" />
+    <Folder Include="Profiles\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>

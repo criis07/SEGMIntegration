@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -20,8 +20,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Application\Application.csproj" />
-    <ProjectReference Include="..\..\src\lafise.test.Api\lafise.test.Api.csproj" />
+    <ProjectReference Include="..\..\src\Lafise.SEGMIntegration.Api\Lafise.SEGMIntegration.Api.csproj" />
     <ProjectReference Include="..\..\src\Infrastructure\Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\lafise.test.Api\Lafise.SEGMIntegration.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>

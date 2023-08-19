@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lafise.test.Domain.Entities.SEGM
+namespace Lafise.SEGMIntegration.Domain.Entities.SEGM
 {
     public class SecurityInterestsTypes
     {

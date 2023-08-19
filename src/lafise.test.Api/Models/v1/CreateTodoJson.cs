@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace lafise.test.Api.Models.v1
+namespace Lafise.SEGMIntegration.Api.Models.v1
 {
     /// <summary>
     /// Entity to receive a todo object from the client

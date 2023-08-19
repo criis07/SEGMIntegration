@@ -1,15 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using AutoMapper;
-using lafise.test.Api.Filters;
-using lafise.test.Application.features.SEGM;
-using lafise.test.Application.features.SEGM.Commands;
-using lafise.test.Application.features.SEGM.Dto;
-using lafise.test.Domain.Entities.SEGM;
+using Lafise.SEGMIntegration.Api.Controllers;
+using Lafise.SEGMIntegration.Api.Filters;
+using Lafise.SEGMIntegration.Application.features.SEGM.Commands;
+using Lafise.SEGMIntegration.Application.features.SEGM.Dto;
+using Lafise.SEGMIntegration.Domain.Entities.SEGM;
 using LAFISE.CrossCutting.Core.Enums;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace lafise.test.Api.Controllers.v1
+namespace Lafise.SEGMIntegration.Api.Controllers.v1
 {
 
     [Route("api/[controller]")]

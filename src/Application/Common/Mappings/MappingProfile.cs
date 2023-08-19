@@ -2,7 +2,7 @@
 using AutoMapper;
 using LAFISE.CrossCutting.Core.Interfaces;
 
-namespace lafise.test.Application.Common.Mappings;
+namespace Lafise.SEGMIntegration.Application.Common.Mappings;
 
 public class MappingProfile : Profile
 {
@@ -14,19 +14,19 @@ public class MappingProfile : Profile
     private void ApplyMappingsFromAssembly(Assembly assembly)
     {
         var mapFromType = typeof(IMapFrom<>);
-        
+
         var mappingMethodName = nameof(IMapFrom<object>.Mapping);
 
         bool HasInterface(Type t) => t.IsGenericType && t.GetGenericTypeDefinition() == mapFromType;
-        
+
         var types = assembly.GetExportedTypes().Where(t => t.GetInterfaces().Any(HasInterface)).ToList();
-        
+
         var argumentTypes = new Type[] { typeof(Profile) };
 
         foreach (var type in types)
         {
             var instance = Activator.CreateInstance(type);
-            
+
             var methodInfo = type.GetMethod(mappingMethodName);
 
             if (methodInfo != null)

@@ -1,10 +1,10 @@
-﻿namespace lafise.test.Api
+﻿namespace Lafise.SEGMIntegration.Api
 {
     /// <summary>
     /// This class extends from APIGatewayProxyFunction which contains the method FunctionHandlerAsync which is the 
     /// actual Lambda function entry point. The Lambda handler field should be set to
     /// 
-    /// lafise.test::lafise.test.LambdaEntryPoint::FunctionHandlerAsync
+    /// Lafise.SEGMIntegration::Lafise.SEGMIntegration.LambdaEntryPoint::FunctionHandlerAsync
     /// </summary>
     public class LambdaEntryPoint :
 

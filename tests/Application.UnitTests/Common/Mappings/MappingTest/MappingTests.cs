@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using lafise.test.Application.Common.Mappings;
+using Lafise.SEGMIntegration.Application.Common.Mappings;
 using NUnit.Framework;
 
 namespace Application.UnitTests.Common.Mappings.MappingTest

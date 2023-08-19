@@ -2,8 +2,9 @@
 using FluentValidation;
 using LAFISE.CrossCutting.Implementations.Application.Common.Behaviors;
 using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace Lafise.SEGMIntegration.Application
 {
     public static class ConfigureServices
     {

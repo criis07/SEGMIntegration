@@ -4,9 +4,9 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
-using static lafise.test.Domain.Entities.SEGM.RegistrationRequestBody;
+using static Lafise.SEGMIntegration.Domain.Entities.SEGM.RegistrationRequestBody;
 
-namespace lafise.test.Domain.Entities.SEGM
+namespace Lafise.SEGMIntegration.Domain.Entities.SEGM
 {
     public class RegistrationRequestBody
     {

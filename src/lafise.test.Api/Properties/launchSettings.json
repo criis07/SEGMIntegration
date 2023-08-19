@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "lafise.test": {
+    "Lafise.SEGMIntegration": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

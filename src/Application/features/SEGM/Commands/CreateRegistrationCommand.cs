@@ -5,16 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using FluentValidation;
-using lafise.test.Application.Common.Interfaces;
-using lafise.test.Application.features;
-using lafise.test.Application.features.SEGM.Dto;
-using lafise.test.Domain.Entities.SEGM;
+using Lafise.SEGMIntegration.Application.Common.Interfaces;
+using Lafise.SEGMIntegration.Application.features.SEGM.Dto;
+using Lafise.SEGMIntegration.Domain.Entities.SEGM;
 using LAFISE.CrossCutting.Core.Enums;
 using LAFISE.CrossCutting.Core.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace lafise.test.Application.features.SEGM.Commands
+namespace Lafise.SEGMIntegration.Application.features.SEGM.Commands
 {
     public class CreateRegistrationCommand : RegistrationRequestBody, IRequest<RegistrationDto>, IMapFrom<RegistrationDto>, IMapFrom<RegistrationRequestBody>
     {

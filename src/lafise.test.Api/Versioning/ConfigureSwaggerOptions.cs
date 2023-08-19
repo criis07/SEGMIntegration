@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace lafise.test.Api.Versioning
+namespace Lafise.SEGMIntegration.Api.Versioning
 {
     /// <summary>
     /// Class to configure swagger options
@@ -47,8 +47,8 @@ namespace lafise.test.Api.Versioning
         {
             var info = new OpenApiInfo()
             {
-                Title = "lafise.test API Set",
-                Description = "API set for lafise.test project integration.",
+                Title = "Lafise.SEGMIntegration API Set",
+                Description = "API set for Lafise.SEGMIntegration project integration.",
                 Version = description.ApiVersion.ToString()
             };
 

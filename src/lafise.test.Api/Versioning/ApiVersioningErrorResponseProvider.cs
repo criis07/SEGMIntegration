@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 
-namespace lafise.test.Api.Versioning
+namespace Lafise.SEGMIntegration.Api.Versioning
 {
     /// <summary>
     /// Class to override method that returns exception when request Api Versioning is not valid

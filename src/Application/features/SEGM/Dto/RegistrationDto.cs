@@ -4,10 +4,10 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
-using lafise.test.Domain.Entities.SEGM;
+using Lafise.SEGMIntegration.Domain.Entities.SEGM;
 using LAFISE.CrossCutting.Core.Entities;
 
-namespace lafise.test.Application.features.SEGM.Dto
+namespace Lafise.SEGMIntegration.Application.features.SEGM.Dto
 {
     [DataContract]
     public class RegistrationDto : RegistrationRequestBody

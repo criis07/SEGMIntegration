@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace lafise.test.Api.Filters
+namespace Lafise.SEGMIntegration.Api.Filters
 {
     /// <summary>
     /// Class to define how the different exceptions are going to be handled and returned to the API client
@@ -41,7 +41,7 @@ namespace lafise.test.Api.Filters
 
         private void HandleException(ExceptionContext context)
         {
-            Type type = context.Exception.GetType();
+            var type = context.Exception.GetType();
             if (_exceptionHandlers.ContainsKey(type))
             {
                 _exceptionHandlers[type].Invoke(context);

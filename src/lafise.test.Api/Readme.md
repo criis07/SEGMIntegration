@@ -57,13 +57,13 @@ If already installed check if new version is available.
 Execute unit tests
 
 ```
-    cd "lafise.test/test/lafise.test.Tests"
+    cd "Lafise.SEGMIntegration/test/Lafise.SEGMIntegration.Tests"
     dotnet test
 ```
 
 Deploy application
 
 ```
-    cd "lafise.test/src/lafise.test"
+    cd "Lafise.SEGMIntegration/src/Lafise.SEGMIntegration"
     dotnet lambda deploy-serverless
 ```

@@ -7,8 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Amazon.SecurityToken.Model;
 using AutoMapper.Internal;
-using lafise.test.Application.Common.Interfaces;
-using lafise.test.Domain.Entities.SEGM;
+using Lafise.SEGMIntegration.Application.Common.Interfaces;
+using Lafise.SEGMIntegration.Domain.Entities.SEGM;
 using LAFISE.CrossCutting.Core.Entities;
 using LAFISE.CrossCutting.Core.Exceptions;
 using LAFISE.CrossCutting.Core.Extensions;
@@ -20,7 +20,7 @@ using RestSharp;
 using RestSharp.Authenticators;
 using StackExchange.Profiling.Internal;
 
-namespace lafise.test.Infrastructure.Services.SEGMService
+namespace Lafise.SEGMIntegration.Infrastructure.Services.SEGMService
 {
     public class SEGMService : ISEGMService
     {
@@ -44,8 +44,8 @@ namespace lafise.test.Infrastructure.Services.SEGMService
         public async Task<AuthResponse> AuthMethod()
         {
             var url = $"{_config[$"SEGM:ApiUrl"]}/api/Account/DoLogIn";
-            string email = _config["SEGM:Email"].ToString();
-            string password = _config["SEGM:Password"].ToString();
+            var email = _config["SEGM:Email"].ToString();
+            var password = _config["SEGM:Password"].ToString();
             var options = new RestClientOptions(url);
             using var client = new RestClient(options);
 

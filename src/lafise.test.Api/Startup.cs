@@ -1,11 +1,13 @@
 ﻿using System.Text.Json.Serialization;
+using Lafise.SEGMIntegration.Application;
+using Lafise.SEGMIntegration.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Rewrite;
 using Yoh.Text.Json.NamingPolicies;
 
-namespace lafise.test.Api
+namespace Lafise.SEGMIntegration.Api
 {
     /// <summary>
     /// Class with different configurations and dependency injection of components of the API
@@ -87,7 +89,7 @@ namespace lafise.test.Api
             option.AddRedirect("^$", "swagger");
             app.UseRewriter(option);
 
-            app.UseXRay("lafise.test");
+            app.UseXRay("Lafise.SEGMIntegration");
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,13 +1,13 @@
 ﻿using System.Reflection;
-using lafise.test.Api.Filters;
-using lafise.test.Api.Versioning;
-using lafise.test.Application.Common.Interfaces;
-using lafise.test.Infrastructure.Services.SEGMService;
+using Lafise.SEGMIntegration.Api.Filters;
+using Lafise.SEGMIntegration.Api.Versioning;
+using Lafise.SEGMIntegration.Application.Common.Interfaces;
+using Lafise.SEGMIntegration.Infrastructure.Services.SEGMService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.OpenApi.Models;
 
-namespace lafise.test.Api
+namespace Lafise.SEGMIntegration.Api
 {
     /// <summary>
     /// Class used to inject different services related to the API

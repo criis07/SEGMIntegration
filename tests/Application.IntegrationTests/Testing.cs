@@ -1,5 +1,5 @@
 ﻿using Amazon.XRay.Recorder.Core;
-using lafise.test.Api;
+using Lafise.SEGMIntegration.Api;
 using MediatR;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -30,7 +30,7 @@ namespace Application.IntegrationTests
             var services = new ServiceCollection();
 
             services.AddSingleton(Mock.Of<IWebHostEnvironment>(w => w.EnvironmentName == "Development" &&
-            w.ApplicationName == "lafise.test.Api"));
+            w.ApplicationName == "Lafise.SEGMIntegration.Api"));
 
             services.AddSingleton<IConfiguration>(provider => _configuration);
 

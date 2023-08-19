@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace lafise.test.Api.Controllers
+namespace Lafise.SEGMIntegration.Api.Controllers
 {
     /// <summary>
     /// Base controller with application layer mediator

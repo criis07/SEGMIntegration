@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lafise.test.Api", "src\lafise.test.Api\lafise.test.Api.csproj", "{FD4721C8-56A9-4929-8B46-7CF35B07398C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lafise.SEGMIntegration.Api", "src\lafise.test.Api\Lafise.SEGMIntegration.Api.csproj", "{FD4721C8-56A9-4929-8B46-7CF35B07398C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7C8ED122-41AE-4E9A-B09D-466019BCFE4F}"
 EndProject
@@ -17,11 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C28AF708-6893-47E1-B328-365C08228352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.IntegrationTests", "tests\Application.IntegrationTests\Application.IntegrationTests.csproj", "{6F7A6620-A8E9-4D39-B828-A4DF5C9EEEE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.IntegrationTests", "tests\Application.IntegrationTests\Application.IntegrationTests.csproj", "{6F7A6620-A8E9-4D39-B828-A4DF5C9EEEE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{C28A9716-EEAC-4F92-95C7-6A4CCDB81FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{C28A9716-EEAC-4F92-95C7-6A4CCDB81FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UnitTests", "tests\Domain.UnitTests\Domain.UnitTests.csproj", "{9134C176-0E78-473B-B34A-58C78902EEAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UnitTests", "tests\Domain.UnitTests\Domain.UnitTests.csproj", "{9134C176-0E78-473B-B34A-58C78902EEAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
